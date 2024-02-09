@@ -109,7 +109,7 @@ const About = () => {
       style={backgroundAnimation}
       className="w-full text-white font-body"
     >
-      <div ref={aboutRef} className="pt-16 ml-10 lg:ml-40 mr-10 lg:mr-24">
+      <div ref={aboutRef} className="pt-16 ml-5 lg:ml-40 mr-10 lg:mr-24">
         <animated.h1
           style={contentAnimation}
           className="text-3xl text-secondary mb-5"
@@ -117,57 +117,26 @@ const About = () => {
           About me:
         </animated.h1>
         <animated.p style={contentAnimation} className="leading-7">
-          Hi, my name is Elite Mwungere. As a full-stack developer, I'm
-          passionate about all aspects of the digital realm. My skills span the
-          entire spectrum, from creating eye-catching designs to building
-          seamless web and mobile applications. I also have a knack for web
-          scraping, extracting valuable insights from data on the web. My
-          journey is defined by the pursuit of innovation and the commitment to
-          deliver elegant solutions for the ever-evolving digital landscape.
+            Elite Mwungere, a full-stack developer, is passionate about the digital realm. He excels in creating eye-catching designs, <br />building seamless web and mobile applications, and has expertise in web scraping for valuable data insights. Committed <br />to innovation, he delivers elegant solutions for the dynamic digital landscape.
         </animated.p>
       </div>
       <div className="flex justify-around flex-col lg:flex-row p-20">
-        <animated.div style={lottieAnimation}>
+        <animated.div className="" style={lottieAnimation}>
           <Lottie
             animationData={developer}
-            className="w-[320px] h-[320px] md:w-[500px] md:h-[500px] lg:w-[800px] lg:h-[800px] lg:ml-40"
+            className=" hidden md:block md:w-[500px] md:h-[500px] lg:w-[800px] lg:h-[800px] lg:ml-40"
           />
         </animated.div>
-        <div className=" flex flex-col">
+        <div className="hidden  md:flex flex-col">
           <animated.div style={ExperienceAnimation} className="flex lg:my-10">
             <p className="mr-2 text-7xl text-secondary">{about ? "5+" : "0"}</p>
             <p className="my-4 ">
               <span>Years of experience. </span>
-              <span>Specialized in building apps, </span>
+              <span>Specialized in lottie apps, </span>
               <span>ensuring a seamless experience for end users.</span>
             </p>
           </animated.div>
-          <div className="flex overflow-hidden relative">
-            {testimonialSprings.map((style, index) => (
-              <animated.div key={index} style={{ ...style, width: "100%" }}>
-                <div className="w-full rounded-lg h-fit shadow-4xl bg-blue-800 m-4 p-4">
-                  <img
-                    src={clientTestimonials[index].img}
-                    alt="pic"
-                    width={44}
-                    height={44}
-                    className="rounded-full mb-4"
-                  />
-                  <h1 className="font-bold text-lg mb-3">
-                    Hirer: {clientTestimonials[index].name}
-                  </h1>
-                  <h2 className="font-semibold mb-7">
-                    Position: {clientTestimonials[index].role}
-                  </h2>
-                  <p>{clientTestimonials[index].testimonial}</p>
-                </div>
-              </animated.div>
-            ))}
-          </div>
-          <div className="flex mt-4">
-            <button onClick={handlePrevTestimonial}>Previous</button>
-            <button onClick={handleNextTestimonial}>Next</button>
-          </div>
+          
         </div>
       </div>
       <animated.div
@@ -177,7 +146,7 @@ const About = () => {
         {AboutList.map(({ id, src, p1, p2 }) => (
           <div
             key={id}
-            className="cursor-pointer mx-6 w-[30%] mb-7 md:w-[20%] lg:w-60 lg:mx-14 h-60 bg-gray-400 shadow-md shadow-white p-3 rounded-lg custom-hover-bg"
+            className="cursor-pointer mx-6 w-[30%] md:w-[20%] lg:w-60 lg:mx-14 h-60 bg-gray-400 shadow-md shadow-white p-3 rounded-lg custom-hover-bg hidden md:block"
           >
             <animated.p
               style={contentAnimation}

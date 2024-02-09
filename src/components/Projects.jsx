@@ -13,7 +13,7 @@ const Projects = () => {
             image:'./carshowcase.png',
             h1:'CarHub',
             p: "Explore my web development skills with this Car Showcase site. Powered ",
-            vercel:'',
+            vercel:'https://carshow-case-kappa.vercel.app/',
             github:'https://github.com/Mwungere/car-hub'
         },
         {

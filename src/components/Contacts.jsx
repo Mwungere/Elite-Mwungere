@@ -9,8 +9,8 @@ import {
 
 const Contacts = () => {
   return (
-    <div name="Contacts" className="w-full bg-primary text-white p-10 lg:p-40 font-body flex flex-col items-center md:flex-row">
-      <div className=" self-start flex flex-col w-1/2">
+    <div name="Contacts" className="w-full h-fit bg-primary text-white p-10 lg:p-40 font-body flex flex-col items-center md:flex-row">
+      <div className=" self-start flex flex-col md:w-1/2">
         <h1 className=" text-3xl font-bold text-secondary mb-[3%]">Connect with me:</h1>
         <p className=" mb-[3%]">Satisfied with me? Please contact me</p>
         <div className=" flex gap-[5%]">
@@ -21,7 +21,7 @@ const Contacts = () => {
           <FaGithub className=" text-4xl text-secondary" />
         </div>
       </div>
-      <div className=" w-1/2">
+      <div className=" pt-10 lg:w-1/2">
         <form
           action="https://getform.io/f/bee2eb3a-9f19-4e1b-a496-81fd7df5128f"
           method="POST"

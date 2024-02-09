@@ -67,12 +67,12 @@ const Skills = () => {
   return (
     <div name="Skills" className='w-full bg-primary p-5 text-white pl-10 font-body flex flex-col items-center'>
       <h1 className=' lg:ml-40 self-start text-secondary text-3xl font-bold my-[5%]'>Skills</h1>
-      <div className=' lg:ml-40 flex flex-wrap'>
+      <div className=' lg:ml-40 grid grid-flow-row grid-cols-2 md:grid-cols-5 lg:grid-cols-5  gap-10 md:gap-20 lg:gap-32'>
         {
           skills.map(({image, p}) => (
-            <div key={image} className=' w-1/5 mb-[5%]'>
-              <img src={image} alt="image" />
-              <p className=' uppercase mt-[5%] text-secondary'>{p}</p>
+            <div key={image} className=' mb-[5%]'>
+              <img src={image} alt="image" className=' w-16' />
+              <p className=' text-sm uppercase mt-[5%] text-secondary'>{p}</p>
             </div>
           ))
         }

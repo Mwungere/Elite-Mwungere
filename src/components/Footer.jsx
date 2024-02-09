@@ -4,7 +4,7 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-
 const Footer = () => {
   return (
     <div className="w-full bg-primary text-white p-10 lg:px-40 font-body flex flex-col items-center">
-      <div className=" w-full flex flex-row justify-between text-secondary">
+      <div className=" w-full hidden md:flex justify-between text-secondary">
         <p>@Mwungere Elite</p>
         <p>Fullstack Developer</p>
         <p>UI Designer</p>
