@@ -34,7 +34,7 @@ const Projects = () => {
         {
           projects.map(({image, h1, p, vercel, github}) => (
             <div key={h1} className=' flex flex-col rounded-xl bg-[#31313F] w-[343px] h-[417px] p-5'>
-              <img src={image} alt="image" className=' w-72 h-60 mb-5 rounded-xl'/>
+              <img src={image} alt="images" className=' w-72 h-60 mb-5 rounded-xl'/>
               <h1 className=' text-secondary text-xl font-bold mb-3'>{h1}</h1>
               <p>{p}</p>
               <div className='mt-5 flex justify-around'>

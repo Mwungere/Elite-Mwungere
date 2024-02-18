@@ -1,4 +1,5 @@
 import React from 'react'
+import Scroller from './Scroller'
 
 const Skills = () => {
   const skills = [

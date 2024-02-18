@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
-import person from "../assets/portrait.png";
+import person from "../assets/Elite.jpg";
 import { Link } from "react-scroll";
+import Lottie from "lottie-react";
+import intro from "../assets/intro.json";
 
 const Home = () => {
   const [about, setAbout] = useState(false);
@@ -12,7 +14,7 @@ const Home = () => {
   return (
     <div
       name="Home"
-      className="bg-primary text-white w-full lg:pt-60 md:pt-10 font-body relative overflow-hidden"
+      className="bg-primary text-white w-full lg:pt-60 md:pt-10 font-body overflow-hidden"
     >
       <div className="w-full pt-40 lg:pt-10 flex flex-col lg:flex-row lg:justify-around font-body">
         <div
@@ -53,15 +55,12 @@ const Home = () => {
             about ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <img
-            src={person}
-            alt="pic"
-            width={444}
-            height={444}
-            className="sm:-mt-20 pl-2"
-          />
+          <Lottie
+          animationData={intro}
+           />
         </div>
       </div>
+            {/* className="sm:-mt-20 pl-2 rounded-full" */}
       <div className="w-full bg-navbar h-36 -mt-36 z-10 absolute"></div>
     </div>
   );

@@ -5,48 +5,56 @@ import { FaAndroid, FaGlobe, FaPalette, FaGithub, FaBug } from "react-icons/fa";
 
 export const clientTestimonials = [
     {
+      index:1,
       name: "Jane Doe",
       img:"./elite.jpeg",
       role: "Full Stack Developer",
       testimonial: "Elite's full-stack expertise brought our project to life! Seamless integration and elegant solutions."
     },
     {
+      index:2, 
       name: "John Smith",
       img:"./elite.jpeg",
       role: "Frontend Developer",
       testimonial: "Impressed with Elite's frontend skills! Modern, responsive, and user-friendly designs that captivated our users."
     },
     {
+      index:3,
       name: "Alice Johnson",
       img:"./elite.jpeg",
       role: "Backend Developer",
       testimonial: "Elite's backend magic elevated our project. Efficient, scalable, and secure—exactly what we needed."
     },
     {
+      index:4,
       name: "David Thompson",
       img:"./elite.jpeg",
       role: "Mobile Developer",
       testimonial: "Elite's mobile development skills are unmatched! Flutter and React Native expertise delivered stunning apps."
     },
     {
+      index:5,
       name: "Emily White",
       img:"./elite.jpeg",
       role: "UI/UX Design",
       testimonial: "Working with Elite on UI/UX was a game-changer! Intuitive designs that enhanced user experience."
     },
     {
+      index:6,
       name: "Mark Davis",
       img:"./elite.jpeg",
       role: "Web Scraping",
       testimonial: "Elite's web scraping expertise extracted valuable insights. Data-driven decisions made simple."
     },
     {
+      index:7,
       name: "Sophia Turner",
       img:"./elite.jpeg",
       role: "Version Control",
       testimonial: "Git mastery by Elite ensured smooth version control. A reliable partner for collaborative projects."
     },
     {
+      index:8,
       name: "Chris Brown",
       img:"./elite.jpeg",
       role: "Debugging",
